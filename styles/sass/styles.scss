@@ -1,5 +1,3 @@
-@import "./partials/setup";
-
 // COLOURS:
 // primary text (blue): #084b6d;
 // secondary (light blue): #f4fcff;
@@ -17,6 +15,10 @@
 // h3: 54px;
 // h4: 34px;
 // h5: 14px;
+
+@import "./partials/setup";
+@import "./partials/variables";
+@import "./partials/typography";
 
 body {
   background-color: mediumpurple;
