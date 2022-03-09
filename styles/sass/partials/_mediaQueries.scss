@@ -1,0 +1,44 @@
+@media (max-width: 500px){
+  /* previous styles here */
+
+  .mapFormContainer {
+      .map {
+          width: 100%;
+      }
+  }
+}
+
+@media (max-width: 800px) {
+  footer {
+    .newsletter {
+      width: 70%;
+    }
+  }
+
+  .mapFormContainer {
+    flex-direction: column;
+    align-items: center;
+    .map {
+      margin-bottom: 50px;
+      width: 85%;
+    }
+  }
+
+  .contactForm {
+    width: 85%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mapFormContainer {
+    .map{
+      width: 45%;
+    }
+  }
+
+  .contactForm {
+    width: calc (55% - 50px);
+    margin-left: 50px;
+  }
+}

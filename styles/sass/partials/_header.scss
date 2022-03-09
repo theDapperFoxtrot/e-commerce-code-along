@@ -1,0 +1,34 @@
+// Made some specific changes where I believe the easiest thing to do with this particular design is to add a bit more a specific wrapper just for the header portion to ensure that the content doesn't grow beyond a larger max width. One thing to note is that I specifically left out a width property, and this is because a widths lower than the 1400px max width, we can see in our design that our header content is going to always be hitting the edge of our page, so we don't need something like 90% width on this particular wrapper.
+
+header {
+background-color: $tertiary;
+
+  .headerWrapper{
+    // Here is the specific code that acts as a header specific wrapper.
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+
+    .headerImgContainer {
+      width: 45%;
+
+      img {
+        max-width: 100%;
+        vertical-align: middle;
+      }
+    }
+
+    .headerContent {
+      width: 55%;
+
+      .contentContainer {
+        width: 65%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
